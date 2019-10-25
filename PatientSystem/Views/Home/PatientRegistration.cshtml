@@ -1,0 +1,23 @@
+﻿@model PatientSystem.Models.Patient
+@{
+    Layout = "_Layout";
+    ViewBag.Title = "Patient Registration";
+}
+
+<form action="SubmitForm" method="post">
+    <label asp-for="Name">Name: <input asp-for="Name" type="text" /></label>
+    <label asp-for="Age">Age: <input asp-for="Age" type="text" /></label>
+    <label asp-for="Address">Address: <input asp-for="Address" type="text" /></label>
+    <label asp-for="Occupation">Occupation: <input asp-for="Occupation" type="text" /></label>
+    <label asp-for="HasInsurance">Has Insurance: <input asp-for="HasInsurance" type="checkbox" /></label>
+    <label asp-for="HadPreviousOperation">Had Previous Operation: <input asp-for="HadPreviousOperation" type="checkbox" /></label>
+    <select asp-for="MaritialStatus">
+        Maritial Status: <!-- <input asp-for="MaritialStatus" type="text" />  -->
+        <option value="Married">Married</option>
+        <option value="Single">Single</option>
+        <option value="Divorced">Divorced</option>
+        <option value="Widowed">Widowed</option>
+    </select>
+
+    <input type="submit" value="Submit Form" /> | <input type="reset" name="reset" value="" />
+</form>

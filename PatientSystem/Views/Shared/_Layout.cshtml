@@ -1,0 +1,23 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/css/styles.css" rel="stylesheet" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <nav>
+        <a asp-action="Index">Index</a>
+        <a asp-action="PatientRegistration">Patient Registration</a>
+        <a asp-action="ListPatients">List Patients</a>
+    </nav>
+    <h1>@ViewBag.Title</h1>
+    @RenderBody()
+</body>
+</html>

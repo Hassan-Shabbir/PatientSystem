@@ -1,0 +1,17 @@
+﻿@model IEnumerable<PatientSystem.Models.Patient>
+@{
+    Layout = "_Layout";
+    ViewBag.Title = "List of Patients";
+}
+
+@foreach (var item in Model)
+{
+    <p>Name: @item.Name</p>
+    <p>Age: @item.Age</p>
+    <p>Address: @item.Address</p>
+    <p>Occpuation: @item.Occupation</p>
+    <p>Has Insurance: @item.HasInsurance</p>
+    <p>Had Previous Operation: @item.HadPreviousOperation</p>
+    <p>Maritial Status: @item.MaritialStatus</p>
+    <p>Date &amp; Time Registered: @item.RegistrationTime</p>
+}
